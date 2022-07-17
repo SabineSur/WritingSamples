@@ -16,6 +16,10 @@ body {
     padding: 12px;
     align-items: center;
   }
+
+  .big-container {
+    display: flex;
+  }
   
   .sidebar {
     width: 270px;
@@ -28,8 +32,8 @@ body {
     align-items: flex-start;
     padding: 10px;
     margin: 10px;
-    flex-shrink: 0;
-    flex: 1;
+    flex-shrink: 1;
+    flex: 0;
   }
   
   ul {
@@ -49,14 +53,11 @@ body {
     padding: 12px;
   }
   
-  .big-container {
-    display: flex;
-    flex: 1;
-  }
-  
   .small-container {
-    padding: 16px;
     display: flex;
+    flex-flow: column wrap;
+    flex: 1;
+    flex-shrink: 0;
   }
   
   .card {
@@ -65,10 +66,9 @@ body {
     border-radius: 4px;
     margin: 16px;
     display: flex;
-    /*align-items: flex-start;*/
     flex-flow: row wrap;
     width: 300px;
-    padding: 32px;
+    padding: 16px;
   }
 
   .footer {
